@@ -1,16 +1,173 @@
-## Hi there 👋
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+FastAPI+%C2%B7+React;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
 
-<!--
-**suchitchopade3110-arch/suchitchopade3110-arch** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Profile Views](https://komarev.com/ghpvc/?username=suchitchopade3110-arch&color=00D9FF&style=flat-square&label=Profile+Views)
 
-Here are some ideas to get you started:
+AI Engineer · Full-Stack Developer · Builder of things that actually work.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I build AI systems that solve real problems — hallucination-detection pipelines, medical diagnosis tools, log analysis engines, LegalTech platforms. FastAPI in the back, React in the front, LLMs doing the hard thinking in the middle.
+
+📍 Tamil Nadu, India &nbsp;|&nbsp; 🎓 AI & Data Science @ Sri Shakthi Institute of Engineering and Technology  
+💼 Open to **remote roles** · **freelance projects** · **hackathon collabs**
+
+---
+
+## 🧠 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logo=groq&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+
+---
+
+## 🚀 Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🪞 Kannadi — Hallucination Detection
+> HackXelerate '26 · Team Straw Hats
+
+8-stage LLM pipeline: claim splitting → RAG retrieval → 3-model consensus voting (LLaMA 3.1 · Mixtral · Gemma) → diff check → grounded rewrite.
+
+**38/38 diagnostic tests passing.**
+
+`FastAPI` `LangChain` `Groq` `MongoDB` `Next.js`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚖️ NyraAI — Contract Risk Analyzer
+> LegalTech SaaS
+
+Upload contract → instant risk score, clause breakdown, red flags, fix suggestions. Local LLM mode: contracts never leave your machine.
+
+`React` `FastAPI` `Supabase` `OpenAI` `Ollama`
+
+[→ Repo](https://github.com/suchitchopade3110-arch/AI-Contract-Analyzer)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔍 LogOracle — Log Analysis Engine
+> Cross-platform security pipeline
+
+Distro detection, intelligent log parsing, AI-powered security analysis across Linux distributions. Full test suite green.
+
+`Python` `FastAPI` `LLM pipeline` `Security modules`
+
+</td>
+<td width="50%" valign="top">
+
+### 🏥 VaidyaaAI — Medical AI Assistant
+> Healthcare LLM platform
+
+AI-powered medical diagnosis and patient assistance. Built for accuracy, safety, and accessibility.
+
+`FastAPI` `LLM` `React` `Medical NLP`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=suchitchopade3110-arch&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=suchitchopade3110-arch&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=suchitchopade3110-arch&theme=tokyonight&hide_border=true" width="60%" />
+</p>
+
+---
+
+## 🏆 Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=suchitchopade3110-arch&theme=tokyonight&no-frame=true&row=1&column=7" />
+</p>
+
+---
+
+## 📈 Activity
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=suchitchopade3110-arch&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+---
+
+## 🐍 Contributions
+
+![Snake animation](https://raw.githubusercontent.com/suchitchopade3110-arch/suchitchopade3110-arch/output/github-snake-dark.svg)
+
+<details>
+<summary>⚙️ First time? Click to set up the snake</summary>
+
+Create `.github/workflows/snake.yml` in this repo:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: suchitchopade3110-arch
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Then go to **Actions → Generate Snake → Run workflow**.
+
+</details>
+
+---
+
+## 🔨 Currently Building
+
+- 🔓NotAFlop -Orchestrated multi-agent LLM pipeline (GROQ) that validates startup ideas against live market data using POCD+ framework scoring and YC batch benchmarking.
+- 🤖 Going deeper on agentic AI systems and multi-LLM orchestration
+- 🌍 Looking for first meaningful remote / freelance AI engineering role
+
+---
+
+## 📬 Let's Talk
+
+Building something with AI and need someone who can own the backend pipeline, wire up LLMs, or ship full-stack end-to-end? I'm interested.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suchit-chopade-635347338?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suchitchopade3110@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suchitchopade3110-arch)
+
+---
+
+*"Build fast. Break things. Fix them faster."*
