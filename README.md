@@ -154,7 +154,7 @@ Then go to **Actions → Generate Snake → Run workflow**.
 
 ## 🔨 Currently Building
 
-- 🔓NotAFlop -Orchestrated multi-agent LLM pipeline (GROQ) that validates startup ideas against live market data using POCD+ framework scoring and YC batch benchmarking.
+- 🚀 **NotAFlop** — multi-agent LLM system that validates startup ideas against live market data using POCD+ scoring and YC batch benchmarking
 - 🤖 Going deeper on agentic AI systems and multi-LLM orchestration
 - 🌍 Looking for first meaningful remote / freelance AI engineering role
 
