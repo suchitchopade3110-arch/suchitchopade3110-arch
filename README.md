@@ -111,45 +111,6 @@ AI-powered medical diagnosis and patient assistance. Built for accuracy, safety,
 
 ---
 
-## 🐍 Contributions
-
-![Snake animation](https://raw.githubusercontent.com/suchitchopade3110-arch/suchitchopade3110-arch/output/github-snake-dark.svg)
-
-<details>
-<summary>⚙️ First time? Click to set up the snake</summary>
-
-Create `.github/workflows/snake.yml` in this repo:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: suchitchopade3110-arch
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Then go to **Actions → Generate Snake → Run workflow**.
-
-</details>
-
 ---
 
 ## 🔨 Currently Building
