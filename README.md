@@ -129,14 +129,6 @@ Validated end-to-end on a real pull request: caught a genuine N+1 query pattern 
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
-## 🏆 Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=suchitchopade3110-arch&theme=tokyonight&no-frame=true&row=1&column=7" />
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
 ## 📈 Activity
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=suchitchopade3110-arch&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
