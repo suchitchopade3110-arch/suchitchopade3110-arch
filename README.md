@@ -1,10 +1,10 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+FastAPI+%C2%B7+React;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+LangGraph+%C2%B7+FastAPI;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=suchitchopade3110-arch&color=00D9FF&style=flat-square&label=Profile+Views)
 
 AI Engineer · Full-Stack Developer · Builder of things that actually work.
 
-I build AI systems that solve real problems — hallucination-detection pipelines, medical diagnosis tools, log analysis engines, LegalTech platforms. FastAPI in the back, React in the front, LLMs doing the hard thinking in the middle.
+I build AI systems that solve real problems — hallucination-detection pipelines, autonomous multi-agent code reviewers, medical diagnosis tools, log analysis engines, LegalTech platforms. FastAPI in the back, React in the front, LLMs (and LangGraph agents) doing the hard thinking in the middle.
 
 📍 Tamil Nadu, India &nbsp;|&nbsp; 🎓 AI & Data Science @ Sri Shakthi Institute of Engineering and Technology  
 💼 Open to **remote roles** · **freelance projects** · **hackathon collabs**
@@ -16,6 +16,7 @@ I build AI systems that solve real problems — hallucination-detection pipeline
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -71,12 +72,29 @@ Distro detection, intelligent log parsing, AI-powered security analysis across L
 </td>
 <td width="50%" valign="top">
 
-### 🏥 VaidyaaAI — Medical AI Assistant
+### 🏥 VaidyaAI — Medical AI Assistant
 > Healthcare LLM platform
 
 AI-powered medical diagnosis and patient assistance. Built for accuracy, safety, and accessibility.
 
 `FastAPI` `LLM` `React` `Medical NLP`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
+### ⚙️ Ignition — Autonomous Multi-Agent AI Code Review System
+> Solo-built · LangGraph state machine
+
+Four-agent pipeline for autonomous first-pass PR review: deterministic rule-based gating routes changes into three parallel semantic agents (structural, logic, security), joined by a Critic agent that verifies every flagged finding via exact AST/symbol lookup — not vector similarity — before it reaches a human, with a bounded hallucination-recheck loop and terminal escalation state.
+
+Validated end-to-end on a real pull request: caught a genuine N+1 query pattern and posted an inline review comment via the GitHub API. V2 redesign adds an evidence-grounded finding model, a structural severity classifier, a staged auto-fix trust ladder, and a calibration methodology backtested against labeled PR history.
+
+`LangGraph` `FastAPI` `Python` `Bun/ts-morph` `GitHub App` `Supabase` `pgvector`
 
 </td>
 </tr>
@@ -110,12 +128,12 @@ AI-powered medical diagnosis and patient assistance. Built for accuracy, safety,
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=suchitchopade3110-arch&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
-
 ---
 
 ## 🔨 Currently Building
 
 - 🚀 **NotAFlop** — multi-agent LLM system that validates startup ideas against live market data using POCD+ scoring and YC batch benchmarking
+- ⚙️ **Ignition V2** — evidence-grounded findings, staged auto-fix trust ladder, and a calibration methodology on top of the working V1 pipeline
 - 🤖 Going deeper on agentic AI systems and multi-LLM orchestration
 - 🌍 Looking for first meaningful remote / freelance AI engineering role
 
