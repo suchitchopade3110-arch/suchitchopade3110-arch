@@ -1,15 +1,19 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+LangGraph+%C2%B7+FastAPI;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
+<div align="center">
+
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:00D9FF,100:1C3C3C&height=220&section=header&text=Suchit%20Chopade&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%C2%B7%20Full-Stack%20Developer%20%C2%B7%20LLM%20Systems&descAlignY=58&descAlign=50)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+LangGraph+%C2%B7+FastAPI;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=suchitchopade3110-arch&color=00D9FF&style=flat-square&label=Profile+Views)
 
-AI Engineer · Full-Stack Developer · Builder of things that actually work.
+</div>
 
 I build AI systems that solve real problems — hallucination-detection pipelines, autonomous multi-agent code reviewers, medical diagnosis tools, log analysis engines, LegalTech platforms. FastAPI in the back, React in the front, LLMs (and LangGraph agents) doing the hard thinking in the middle.
 
 📍 Tamil Nadu, India &nbsp;|&nbsp; 🎓 AI & Data Science @ Sri Shakthi Institute of Engineering and Technology  
 💼 Open to **remote roles** · **freelance projects** · **hackathon collabs**
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 🧠 Tech Stack
 
@@ -28,7 +32,7 @@ I build AI systems that solve real problems — hallucination-detection pipeline
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logo=groq&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 🚀 Projects
 
@@ -100,7 +104,7 @@ Validated end-to-end on a real pull request: caught a genuine N+1 query pattern 
 </tr>
 </table>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 📊 GitHub Stats
 
@@ -113,7 +117,17 @@ Validated end-to-end on a real pull request: caught a genuine N+1 query pattern 
   <img src="https://streak-stats.demolab.com?user=suchitchopade3110-arch&theme=tokyonight&hide_border=true" width="60%" />
 </p>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/suchitchopade3110-arch/suchitchopade3110-arch/output/github-contribution-grid-snake.svg" width="100%" />
+</p>
+
+<sub>Animated automatically every day by a GitHub Action — see setup note below.</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 🏆 Trophies
 
@@ -121,14 +135,13 @@ Validated end-to-end on a real pull request: caught a genuine N+1 query pattern 
   <img src="https://github-profile-trophy.vercel.app/?username=suchitchopade3110-arch&theme=tokyonight&no-frame=true&row=1&column=7" />
 </p>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 📈 Activity
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=suchitchopade3110-arch&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
----
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 🔨 Currently Building
 
@@ -137,7 +150,7 @@ Validated end-to-end on a real pull request: caught a genuine N+1 query pattern 
 - 🤖 Going deeper on agentic AI systems and multi-LLM orchestration
 - 🌍 Looking for first meaningful remote / freelance AI engineering role
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
 
 ## 📬 Let's Talk
 
@@ -147,6 +160,10 @@ Building something with AI and need someone who can own the backend pipeline, wi
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suchitchopade3110@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suchitchopade3110-arch)
 
----
+<div align="center">
 
 *"Build fast. Break things. Fix them faster."*
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:1C3C3C,50:00D9FF,100:0F2027&height=100&section=footer)
+
+</div>
