@@ -1,161 +1,77 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:00D9FF,100:1C3C3C&height=220&section=header&text=Suchit%20Chopade&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%C2%B7%20Full-Stack%20Developer%20%C2%B7%20LLM%20Systems&descAlignY=58&descAlign=50)
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=00D9FF&width=750&lines=Hey%2C+I'm+Suchit+%F0%9F%91%8B;AI+Engineer+%7C+Full-Stack+Dev;LangChain+%C2%B7+LangGraph+%C2%B7+FastAPI;Building+LLMs+that+actually+work.)](https://git.io/typing-svg)
+<!--                    SUCHIT.DEV // BOOT SEQUENCE                  -->
 
-![Profile Views](https://komarev.com/ghpvc/?username=suchitchopade3110-arch&color=00D9FF&style=flat-square&label=Profile+Views)
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-</div>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,15:001827,40:00D9FF,65:006B7A,85:003B4A,100:020617&height=280&section=header&text=SUCHIT%20CHOPADE&fontSize=64&fontColor=FFFFFF&animation=twinkling&fontAlignY=34&desc=AI%20SYSTEMS%20ENGINEER%20%7C%20AGENTIC%20AI%20%7C%20LLM%20ENGINEERING&descAlignY=58&descSize=17&descColor=00D9FF"/>
 
-I build AI systems that solve real problems — hallucination-detection pipelines, autonomous multi-agent code reviewers, medical diagnosis tools, log analysis engines, LegalTech platforms. FastAPI in the back, React in the front, LLMs (and LangGraph agents) doing the hard thinking in the middle.
+<br>
 
-📍 Tamil Nadu, India &nbsp;|&nbsp; 🎓 AI & Data Science @ Sri Shakthi Institute of Engineering and Technology  
-💼 Open to **remote roles** · **freelance projects** · **hackathon collabs**
+<!-- ANIMATED SYSTEM BOOT -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&duration=1300&pause=400&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=90&lines=%3E%3E+BOOTING+SUCHIT.DEV...;%3E%3E+LOADING+AGENTIC+CORE...;%3E%3E+INITIALIZING+RAG+ENGINE...;%3E%3E+MOUNTING+VERIFICATION+LAYER...;%3E%3E+SYSTEM+ONLINE+%E2%9A%A1"/>
 
-## 🧠 Tech Stack
+<br>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logo=groq&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+<!-- ╔═══════════════ PERSONAL AI OPERATOR ═══════════════╗ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
+<img src="./assets/suchit-tech-avatar.png" width="200" alt="Suchit Chopade — AI Systems Engineer"/>
 
-## 🚀 Projects
+<br>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=1200&pause=450&color=00D9FF&center=true&vCenter=true&width=720&height=55&lines=SUCHIT.CHOPADE;AI+SYSTEMS+ENGINEER;AGENTS+%7C+RAG+%7C+LLMs+%7C+VERIFICATION"/>
 
-### 🪞 Kannadi — Hallucination Detection
-> HackXelerate '26 · Team Straw Hats
+<br>
 
-8-stage LLM pipeline: claim splitting → RAG retrieval → 3-model consensus voting (LLaMA 3.1 · Mixtral · Gemma) → diff check → grounded rewrite.
+<!-- LIVE SYSTEM STATUS -->
 
-**38/38 diagnostic tests passing.**
+<img src="https://img.shields.io/badge/%E2%97%8F_SYSTEM-ONLINE-00D9FF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/%E2%97%8F_AGENTS-ACTIVE-00D9FF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/%E2%97%8F_RAG-ONLINE-00D9FF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/%E2%97%8F_VERIFY-ONLINE-00D9FF?style=for-the-badge"/>
 
-`FastAPI` `LangChain` `Groq` `MongoDB` `Next.js`
+<br><br>
 
-</td>
-<td width="50%" valign="top">
+<!-- NAVIGATION -->
 
-### ⚖️ NyraAI — Contract Risk Analyzer
-> LegalTech SaaS
+<a href="https://suchitdev.netlify.app/">
+<img src="https://img.shields.io/badge/%E2%96%B6%20PORTFOLIO-00D9FF?style=for-the-badge&logoColor=black"/>
+</a>
 
-Upload contract → instant risk score, clause breakdown, red flags, fix suggestions. Local LLM mode: contracts never leave your machine.
+<a href="https://www.linkedin.com/in/suchit-sachin-chopade-635347338/">
+<img src="https://img.shields.io/badge/%E2%9A%A1%20LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
-`React` `FastAPI` `Supabase` `OpenAI` `Ollama`
+<a href="https://github.com/suchitchopade3110-arch">
+<img src="https://img.shields.io/badge/%E2%96%A0%20GITHUB-111827?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
-[→ Repo](https://github.com/suchitchopade3110-arch/AI-Contract-Analyzer)
+<br><br>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<!-- LIVE PROFILE SIGNAL -->
 
-### 🔍 LogOracle — Log Analysis Engine
-> Cross-platform security pipeline
+<img src="https://komarev.com/ghpvc/?username=suchitchopade3110-arch&style=for-the-badge&color=00D9FF&label=PROFILE+SIGNALS"/>
 
-Distro detection, intelligent log parsing, AI-powered security analysis across Linux distributions. Full test suite green.
+<br><br>
 
-`Python` `FastAPI` `LLM pipeline` `Security modules`
+<!-- SYSTEM CORE -->
 
-</td>
-<td width="50%" valign="top">
-
-### 🏥 VaidyaAI — Medical AI Assistant
-> Healthcare LLM platform
-
-AI-powered medical diagnosis and patient assistance. Built for accuracy, safety, and accessibility.
-
-`FastAPI` `LLM` `React` `Medical NLP`
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="100%" valign="top">
-
-### ⚙️ Ignition — Autonomous Multi-Agent AI Code Review System
-> Solo-built · LangGraph state machine
-
-Four-agent pipeline for autonomous first-pass PR review: deterministic rule-based gating routes changes into three parallel semantic agents (structural, logic, security), joined by a Critic agent that verifies every flagged finding via exact AST/symbol lookup — not vector similarity — before it reaches a human, with a bounded hallucination-recheck loop and terminal escalation state.
-
-Validated end-to-end on a real pull request: caught a genuine N+1 query pattern and posted an inline review comment via the GitHub API. V2 redesign adds an evidence-grounded finding model, a structural severity classifier, a staged auto-fix trust ladder, and a calibration methodology backtested against labeled PR history.
-
-`LangGraph` `FastAPI` `Python` `Bun/ts-morph` `GitHub App` `Supabase` `pgvector`
-
-</td>
-</tr>
-</table>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=suchitchopade3110-arch&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=suchitchopade3110-arch&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=suchitchopade3110-arch&theme=tokyonight&hide_border=true" width="60%" />
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/suchitchopade3110-arch/suchitchopade3110-arch/output/github-contribution-grid-snake.svg" width="100%" />
-</p>
-
-<sub>Animated automatically every day by a GitHub Action — see setup note below.</sub>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
-## 📈 Activity
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=suchitchopade3110-arch&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
-## 🔨 Currently Building
-
-- 🚀 **NotAFlop** — multi-agent LLM system that validates startup ideas against live market data using POCD+ scoring and YC batch benchmarking
-- ⚙️ **Ignition V2** — evidence-grounded findings, staged auto-fix trust ladder, and a calibration methodology on top of the working V1 pipeline
-- 🤖 Going deeper on agentic AI systems and multi-LLM orchestration
-- 🌍 Looking for first meaningful remote / freelance AI engineering role
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D9FF,100:1C3C3C&height=3&section=header" width="100%"/>
-
-## 📬 Let's Talk
-
-Building something with AI and need someone who can own the backend pipeline, wire up LLMs, or ship full-stack end-to-end? I'm interested.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suchit-chopade-635347338?utm_source=share_via&utm_content=profile&utm_medium=member_android)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suchitchopade3110@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suchitchopade3110-arch)
-
-<div align="center">
-
-*"Build fast. Break things. Fix them faster."*
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:1C3C3C,50:00D9FF,100:0F2027&height=100&section=footer)
+```text
+╭──────────────────────────────────────────────────────────────╮
+│                 SUCHIT.DEV // CORE ONLINE                    │
+├──────────────────────────────────────────────────────────────┤
+│                                                              │
+│  AGENTS        ████████████████████  ACTIVE                  │
+│  RAG           ████████████████████  ONLINE                  │
+│  LLM           ████████████████████  ONLINE                  │
+│  VERIFICATION  ████████████████████  ACTIVE                  │
+│                                                              │
+│       RETRIEVE  →  REASON  →  VERIFY  →  SHIP               │
+│                                                              │
+╰──────────────────────────────────────────────────────────────╯
+```
 
 </div>
