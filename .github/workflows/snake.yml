@@ -1,9 +1,14 @@
-name: Generate Snake Animation
+# .github/workflows/snake.yml
+# Generates the contribution-snake SVGs into the `output` branch.
+# Runs every 6 hours + on manual trigger. This is what makes the
+# snake image in your README actually render instead of 404-ing.
+
+name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs daily at midnight UTC
-  workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -13,16 +18,17 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - name: Generate snake SVG
-        uses: Platane/snk@v3
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: suchitchopade3110-arch
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23f43f5e&color_dots=%2315151a,%234c0519,%239f1239,%23f43f5e,%23ff8fab
 
-      - name: Push output to "output" branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
