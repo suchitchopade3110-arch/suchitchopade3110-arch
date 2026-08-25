@@ -14,20 +14,3 @@
 </div>
 
 ---
-
-## whoami
-
-```python
-class Suchit:
-    role      = "AI/ML Engineer · Full-Stack Developer"
-    location  = "Coimbatore, Tamil Nadu, India"
-    education = "B.Tech AI & Data Science @ SIET  ·  CGPA 8.17"
-    focus     = ["agentic pipelines", "production RAG",
-                 "hallucination detection", "healthcare doc intelligence"]
-    thesis    = "Fluent nonsense is worse than explicit failure."
-    open_to   = ["AI/ML internships", "remote roles", "hackathon collabs"]
-```
-
-I don't treat LLMs as black boxes. I build **self-correcting agentic pipelines** that inspect, score, and verify every output against ground truth *before* it reaches a user — claim-level hallucination scoring, deterministic AST checks, and audit trails instead of vibes.
-
----
