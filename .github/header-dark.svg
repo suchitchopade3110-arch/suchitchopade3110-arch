@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+<rect width="1000" height="300" rx="12" fill="#0d1117"/>
+<defs><pattern id="gd" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24,0 L0,0 0,24" fill="none" stroke="#1a222c" stroke-width="1"/></pattern></defs><rect width="1000" height="300" fill="url(#gd)"/>
+<rect x="0.75" y="0.75" width="998.5" height="298.5" rx="12" fill="none" stroke="#30363d" stroke-width="1.5"/>
+<path d="M24,38 L24,24 L38,24" fill="none" stroke="#f0883e" stroke-width="1.5"/>
+<path d="M976,38 L976,24 L962,24" fill="none" stroke="#f0883e" stroke-width="1.5"/>
+<path d="M24,262 L24,276 L38,276" fill="none" stroke="#f0883e" stroke-width="1.5"/>
+<path d="M976,262 L976,276 L962,276" fill="none" stroke="#f0883e" stroke-width="1.5"/>
+<text x="56" y="70" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="3" fill="#7d8590">AI SYSTEMS · BACKEND · VERIFICATION</text>
+<text x="54" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="64" font-weight="700" letter-spacing="-1" fill="#e6edf3" fill-opacity="0" stroke="#e6edf3" stroke-width="1.2" stroke-dasharray="900" stroke-dashoffset="900">Suchit Chopade<animate attributeName="stroke-dashoffset" values="900;0" dur="2.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/><animate attributeName="fill-opacity" values="0;1" begin="2.1s" dur="0.9s" fill="freeze"/><animate attributeName="stroke-opacity" values="1;0" begin="2.6s" dur="0.6s" fill="freeze"/></text>
+<rect x="56" y="170" width="0" height="3" fill="#f0883e"><animate attributeName="width" values="0;72" begin="2.4s" dur="0.6s" fill="freeze"/></rect>
+<text x="56" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#7d8590" opacity="0">I build AI systems that have to prove their answers.<animate attributeName="opacity" values="0;1" begin="2.9s" dur="0.8s" fill="freeze"/></text>
+<text x="56" y="244" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#7d8590" opacity="0">B.Tech AI &amp; Data Science  ·  Coimbatore, IN  ·  Lead AI Engineer, Team Straw Hats<animate attributeName="opacity" values="0;1" begin="3.3s" dur="0.8s" fill="freeze"/></text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#7d8590">
+<path id="in" d="M660,150 L760,150" stroke="#30363d" stroke-width="1.5"/>
+<path id="out" d="M820,150 L920,150" stroke="#30363d" stroke-width="1.5"/>
+<text x="660" y="136">model output</text><text x="920" y="136" text-anchor="end">user</text>
+<path d="M820,150 L820,206 L880,206" fill="none" stroke="#30363d" stroke-width="1.5" stroke-dasharray="3 4"/><text x="886" y="210">flag</text>
+</g>
+<rect x="760" y="120" width="60" height="60" rx="8" fill="#11161d" stroke="#f0883e" stroke-width="1.8"/>
+<text x="790" y="155" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#f0883e">VERIFY</text>
+<text x="790" y="198" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#7d8590">gate</text>
+<circle r="4" fill="#e6edf3"><animateMotion dur="1.6s" begin="0s;0s+6s" fill="remove" path="M660,150 L760,150" repeatCount="1"/><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" begin="0s;0s+6s" fill="freeze"/></circle>
+<circle r="4" fill="#3fb950" opacity="0"><animateMotion dur="1.4s" begin="1.8s;1.8s+6s" path="M820,150 L920,150"/><animate attributeName="opacity" values="0;1;1;0" dur="1.4s" begin="1.8s;1.8s+6s"/></circle>
+<circle r="4" fill="#e6edf3"><animateMotion dur="1.6s" begin="2s;2s+6s" fill="remove" path="M660,150 L760,150" repeatCount="1"/><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" begin="2s;2s+6s" fill="freeze"/></circle>
+<circle r="4" fill="#f0883e" opacity="0"><animateMotion dur="1.4s" begin="3.8s;3.8s+6s" path="M820,150 L820,206 L880,206"/><animate attributeName="opacity" values="0;1;1;0" dur="1.4s" begin="3.8s;3.8s+6s"/></circle>
+<circle r="4" fill="#e6edf3"><animateMotion dur="1.6s" begin="4s;4s+6s" fill="remove" path="M660,150 L760,150" repeatCount="1"/><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" begin="4s;4s+6s" fill="freeze"/></circle>
+<circle r="4" fill="#3fb950" opacity="0"><animateMotion dur="1.4s" begin="5.8s;5.8s+6s" path="M820,150 L920,150"/><animate attributeName="opacity" values="0;1;1;0" dur="1.4s" begin="5.8s;5.8s+6s"/></circle>
+<rect x="760" y="120" width="60" height="60" rx="8" fill="#f0883e" opacity="0"><animate attributeName="opacity" values="0;0.18;0" dur="0.6s" begin="1.5s;3.5s;5.5s;7.5s;9.5s;11.5s" /></rect>
+</svg>
