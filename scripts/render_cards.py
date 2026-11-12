@@ -13,6 +13,7 @@ because GitHub shows README images sandboxed: no scripts, no outside requests.
 """
 import base64
 import datetime as dt
+import hashlib
 import json
 import os
 import textwrap
@@ -450,8 +451,13 @@ def link(t, i, l):
 # ───────────────────────────── README ─────────────────────────────
 
 def pic(name, width, alt, href=None):
-    img = (f'<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/{name}-dark.svg">'
-           f'<img src="./cards/{name}-light.svg" width="{width}" alt="{escape(alt)}"></picture>')
+    def src(theme):
+        # short content hash in the URL, so browsers never show a stale cached card
+        tag = hashlib.md5((CARDS / f"{name}-{theme}.svg").read_bytes()).hexdigest()[:8]
+        return f"./cards/{name}-{theme}.svg?v={tag}"
+
+    img = (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{src("dark")}">'
+           f'<img src="{src("light")}" width="{width}" alt="{escape(alt)}"></picture>')
     return f'<a href="{href}">{img}</a>' if href else img
 
 
