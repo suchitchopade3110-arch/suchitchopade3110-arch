@@ -12,7 +12,7 @@
 @keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes pop{0%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
 @keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
-@keyframes tick{from{opacity:1}to{opacity:0}}
+@keyframes tick{0%,100%{opacity:1}}
 @keyframes sweep{0%,72%{transform:translateX(-140%) skewX(-18deg)}100%{transform:translateX(260%) skewX(-18deg)}}
 .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
 .fade{animation:fade .6s ease both}
@@ -20,7 +20,7 @@
 .growy{animation:growy .8s cubic-bezier(.2,.8,.2,1) both;transform-origin:center bottom;transform-box:fill-box}
 .pop{animation:pop .45s cubic-bezier(.2,.8,.2,1) both;transform-origin:center;transform-box:fill-box}
 .blink{animation:blink 1.6s steps(1) infinite}
-.frame{opacity:0;animation:tick .055s step-end forwards}
+.frame{opacity:0;animation:tick .055s linear}  /* no fill: each frame drops back to hidden when its slot ends */
 .shine{transform:translateX(-140%) skewX(-18deg)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 @keyframes swing{0%{opacity:0;transform:translateY(34px) rotate(2.5deg)}60%{opacity:1;transform:translateY(-5px) rotate(-.6deg)}100%{opacity:1;transform:none}}.swing{animation:swing .9s cubic-bezier(.2,.8,.2,1) both;transform-origin:left bottom}@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(4.4);opacity:0}}.ring{animation:ring 2.6s ease-out 1.32s infinite;transform-origin:center;transform-box:fill-box}.shine{animation:sweep 7s ease-in-out 4.0s infinite;transform-box:fill-box}</style><rect x="1" y="1" width="398" height="298" rx="18" fill="#F4F0E6" stroke="#D5CEBD" stroke-width="2"/><g class="swing" style="animation-delay:0.12s"><rect class="growy" style="animation-delay:0.42s" x="1" y="40" width="7" height="220" fill="var(--red)"/><text class="mb mute ls" x="34" y="52" font-size="15">JOB 05</text><circle cx="360" cy="46" r="5" fill="var(--red)"/><circle class="ring" cx="360" cy="46" r="5" fill="none" stroke="var(--red)" stroke-width="1.5" opacity="0"/><text class="mb ink ls" x="344" y="52" font-size="13" text-anchor="end">BUILDING</text><clipPath id="n"><text class="d" x="33" y="128" font-size="60">NOTAFLOP</text></clipPath><text class="d ink" x="33" y="128" font-size="60">NOTAFLOP</text><g clip-path="url(#n)"><rect class="shine" x="33" y="70" width="70" height="70" fill="var(--red)" opacity=".9"/></g><text class="m ink fade" style="animation-delay:0.57s" x="34" y="172" font-size="17">11 agents stress-test a startup</text><text class="m ink fade" style="animation-delay:0.67s" x="34" y="197" font-size="17">pitch in under 30 seconds.</text><line x1="34" y1="250" x2="366" y2="250" stroke="var(--rule)" stroke-width="1.5"/><text class="m mute fade" style="animation-delay:0.92s" x="34" y="276" font-size="14">FastAPI · Groq · SSE</text><g class="fade" style="animation-delay:1.02s"><path d="M352 275L365 262M355.9 262H365V271.1" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

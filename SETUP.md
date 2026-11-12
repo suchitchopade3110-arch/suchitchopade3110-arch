@@ -19,8 +19,19 @@ Colours are the `THEMES` table at the top of `scripts/render_cards.py`.
 
 No packages needed, Python 3.9 or newer. `scripts/fetch_contributions.py` needs a `GITHUB_TOKEN` in the environment.
 
+## The portrait
+
+The hero shows a photo redrawn as dots. The dots are stored in `data/portrait.json`, made from `data/portrait-cutout.png`.
+To use a different photo: remove its background (any background remover), crop to about 4:3 around head and shoulders, save it over `data/portrait-cutout.png`, then run
+
+    pip install pillow numpy
+    python scripts/make_portrait.py
+    python scripts/render_cards.py
+
+To show the claim-checking panel instead of the portrait, add `"hero_panel": "claims"` to `data/profile.json`.
+
 ## Notes
 
 - Job tile descriptions wrap at 31 characters and show three lines at most, so keep them under about 90 characters.
 - The fonts cover basic Latin only. Other characters fall back to a system font.
-- The four claims in the hero panel are an illustration of claim-level checking, not live data. They are the `CLAIMS` list in `render_cards.py`.
+- If the hero is switched to the claims panel: its four claims are an illustration of claim-level checking, not live data. They are the `CLAIMS` list in `render_cards.py`.

@@ -25,6 +25,8 @@ CARDS = ROOT / ("preview" if STATIC else "cards")  # static renders never overwr
 
 P = json.loads((ROOT / "data" / "profile.json").read_text())
 C = json.loads((ROOT / "data" / "contributions.json").read_text())
+_portrait = ROOT / "data" / "portrait.json"  # optional, made by scripts/make_portrait.py
+PORTRAIT = json.loads(_portrait.read_text()) if _portrait.exists() else None
 
 THEMES = {
     "light": dict(paper="#F4F0E6", panel="#ECE7DA", ink="#15140F", mute="#6E685B",
@@ -67,7 +69,7 @@ BASE_CSS = """
 @keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes pop{0%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
 @keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
-@keyframes tick{from{opacity:1}to{opacity:0}}
+@keyframes tick{0%,100%{opacity:1}}
 @keyframes sweep{0%,72%{transform:translateX(-140%) skewX(-18deg)}100%{transform:translateX(260%) skewX(-18deg)}}
 .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
 .fade{animation:fade .6s ease both}
@@ -75,7 +77,7 @@ BASE_CSS = """
 .growy{animation:growy .8s cubic-bezier(.2,.8,.2,1) both;transform-origin:center bottom;transform-box:fill-box}
 .pop{animation:pop .45s cubic-bezier(.2,.8,.2,1) both;transform-origin:center;transform-box:fill-box}
 .blink{animation:blink 1.6s steps(1) infinite}
-.frame{opacity:0;animation:tick .055s step-end forwards}
+.frame{opacity:0;animation:tick .055s linear}  /* no fill: each frame drops back to hidden when its slot ends */
 .shine{transform:translateX(-140%) skewX(-18deg)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 """
@@ -134,6 +136,42 @@ CLAIMS = [
 ]
 
 
+def portrait_panel(t, css):
+    """Right side of the hero: the photo redrawn as a dot grid, revealed row by row, then stamped."""
+    px, py, pw, ph = 640, 104, 504, 372
+    cols, rows = PORTRAIT["cols"], PORTRAIT["rows"]
+    c = min((pw - 24) / (cols + .5), (ph - 12) / rows)
+    ox, oy = px + (pw - c * (cols + .5)) / 2, py + ph - c * rows  # sit on the bottom edge
+    by_row = {}
+    for i, j, l in PORTRAIT["cells"]:
+        v = (1 - l / 100) ** .9 if t == "light" else (l / 100) ** .8  # ink follows shadow on paper, light on black
+        x = ox + (i + (1 if j % 2 else .5)) * c
+        by_row.setdefault(j, []).append(f'<circle cx="{x:.1f}" cy="{oy + (j + .5) * c:.1f}" r="{c * (.08 + .46 * v):.2f}"/>')
+    css += [
+        f"@keyframes scan{{0%{{transform:translateY(0);opacity:0}}6%{{opacity:.85}}60%{{opacity:.85}}"
+        f"66%,100%{{transform:translateY({ph - 16}px);opacity:0}}}}",
+        ".scan{opacity:0;animation:scan 7s linear 1.2s infinite}",
+        "@keyframes slam{0%{opacity:0;transform:rotate(-9deg) scale(2.6)}60%{opacity:1;transform:rotate(-9deg) scale(.94)}"
+        "100%{opacity:1;transform:rotate(-9deg) scale(1)}}",
+        ".st{transform:rotate(-9deg);transform-origin:center;transform-box:fill-box;animation:slam .5s cubic-bezier(.3,1.4,.5,1) 2.4s both}",
+    ]
+    out = [
+        f'<clipPath id="pp"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10"/></clipPath>',
+        f'<rect class="fade" {d(.5)} x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10" fill="var(--panel)" stroke="var(--rule)" stroke-width="1.5"/>',
+        '<g clip-path="url(#pp)" fill="var(--ink)">',
+    ]
+    for j in sorted(by_row):
+        out.append(f'<g class="fade" style="animation-duration:.35s;animation-delay:{.8 + j * .022:.2f}s">{"".join(by_row[j])}</g>')
+    out.append(f'<rect class="scan" x="{px}" y="{py + 8}" width="{pw}" height="2" fill="var(--red)"/></g>')
+    out.append(
+        f'<g class="fade" {d(.7)}><text class="mb mute ls" x="{px + 22}" y="{py + 34}" font-size="13">SUBJECT</text>'
+        f'<text class="mb mute ls" x="{px + pw - 22}" y="{py + 34}" font-size="13" text-anchor="end">FILE {P["file_no"]}</text></g>'
+        f'<g class="st"><rect x="{px + pw - 186}" y="{py + ph - 70}" width="166" height="50" rx="6" fill="var(--panel)" stroke="var(--red)" stroke-width="3"/>'
+        f'<text class="d red" x="{px + pw - 103}" y="{py + ph - 33}" font-size="33" text-anchor="middle" letter-spacing=".06em">VERIFIED</text></g>'
+    )
+    return out
+
+
 def hero(t):
     w, h = 1200, 540
     loop = 11.0  # seconds for the verification panel cycle
@@ -172,47 +210,50 @@ def hero(t):
     for i, line in enumerate(P["tagline"]):
         left.append(f'<text class="s ink rise" {d(.6 + i * .12)} x="56" y="{412 + i * 36}" font-size="31">{escape(line)}</text>')
 
-    # right column: claim-level verification, looping
-    px, py, pw, ph = 640, 104, 504, 372
-    panel = [
-        f'<rect class="fade" {d(.5)} x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10" fill="var(--panel)" stroke="var(--rule)" stroke-width="1.5"/>',
-        f'<g class="fade" {d(.7)}><text class="mb mute ls" x="{px + 24}" y="{py + 38}" font-size="13">EXHIBIT A</text>'
-        f'<text class="mb ink ls" x="{px + pw - 24}" y="{py + 38}" font-size="13" text-anchor="end">CLAIM-LEVEL VERIFICATION</text>'
-        f'<line x1="{px + 24}" y1="{py + 54}" x2="{px + pw - 24}" y2="{py + 54}" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="3 5"/></g>',
-    ]
-    ry0 = py + 96
-    for i, (num, text, ok, score) in enumerate(CLAIMS):
-        y = ry0 + i * 53
-        t_row, t_mark = 1.0 + i * .45, 3.0 + i * .55
-        css += [lk(f"r{i}", t_row), lk(f"k{i}", t_mark), f".r{i}{{animation:r{i} {loop}s linear infinite}}",
-                f".k{i}{{animation:k{i} {loop}s linear infinite}}"]
-        col = "var(--ink)" if ok else "var(--red)"
-        mark = (f'<path d="M{px + pw - 104} {y - 6}l6 6 11-13" fill="none" stroke="{col}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>'
-                if ok else
-                f'<path d="M{px + pw - 103} {y - 12}l13 13m0-13l-13 13" fill="none" stroke="{col}" stroke-width="2.6" stroke-linecap="round"/>')
-        strike = ""
-        if not ok:
-            css += [lk(f"x{i}", t_mark, "wipe"),
-                    f".x{i}{{animation:x{i} {loop}s linear infinite;transform-origin:left center;transform-box:fill-box}}"]
-            strike = f'<rect class="x{i}" x="{px + 62}" y="{y - 6}" width="{len(text) * 9.02:.0f}" height="2" fill="var(--red)"/>'
-        panel.append(
-            f'<g class="r{i}"><text class="mb mute" x="{px + 24}" y="{y}" font-size="15">{num}</text>'
-            f'<text class="m ink" x="{px + 62}" y="{y}" font-size="15">{escape(text)}</text></g>{strike}'
-            f'<g class="k{i}">{mark}<text class="mb" x="{px + pw - 24}" y="{y}" font-size="15" text-anchor="end" fill="{col}">{score}</text></g>'
-            f'<line x1="{px + 24}" y1="{y + 20}" x2="{px + pw - 24}" y2="{y + 20}" stroke="var(--rule)" stroke-width="1"/>'
-        )
-    panel.append(f'<rect class="scan" x="{px + 14}" y="{ry0 - 24}" width="{pw - 28}" height="2" fill="var(--red)" opacity="0"/>')
+    if PORTRAIT and P.get("hero_panel", "portrait") == "portrait":
+        panel = portrait_panel(t, css)
+    else:
+        # right column: claim-level verification, looping (set "hero_panel": "claims" in profile.json)
+        px, py, pw, ph = 640, 104, 504, 372
+        panel = [
+            f'<rect class="fade" {d(.5)} x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10" fill="var(--panel)" stroke="var(--rule)" stroke-width="1.5"/>',
+            f'<g class="fade" {d(.7)}><text class="mb mute ls" x="{px + 24}" y="{py + 38}" font-size="13">EXHIBIT A</text>'
+            f'<text class="mb ink ls" x="{px + pw - 24}" y="{py + 38}" font-size="13" text-anchor="end">CLAIM-LEVEL VERIFICATION</text>'
+            f'<line x1="{px + 24}" y1="{py + 54}" x2="{px + pw - 24}" y2="{py + 54}" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="3 5"/></g>',
+        ]
+        ry0 = py + 96
+        for i, (num, text, ok, score) in enumerate(CLAIMS):
+            y = ry0 + i * 53
+            t_row, t_mark = 1.0 + i * .45, 3.0 + i * .55
+            css += [lk(f"r{i}", t_row), lk(f"k{i}", t_mark), f".r{i}{{animation:r{i} {loop}s linear infinite}}",
+                    f".k{i}{{animation:k{i} {loop}s linear infinite}}"]
+            col = "var(--ink)" if ok else "var(--red)"
+            mark = (f'<path d="M{px + pw - 104} {y - 6}l6 6 11-13" fill="none" stroke="{col}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>'
+                    if ok else
+                    f'<path d="M{px + pw - 103} {y - 12}l13 13m0-13l-13 13" fill="none" stroke="{col}" stroke-width="2.6" stroke-linecap="round"/>')
+            strike = ""
+            if not ok:
+                css += [lk(f"x{i}", t_mark, "wipe"),
+                        f".x{i}{{animation:x{i} {loop}s linear infinite;transform-origin:left center;transform-box:fill-box}}"]
+                strike = f'<rect class="x{i}" x="{px + 62}" y="{y - 6}" width="{len(text) * 9.02:.0f}" height="2" fill="var(--red)"/>'
+            panel.append(
+                f'<g class="r{i}"><text class="mb mute" x="{px + 24}" y="{y}" font-size="15">{num}</text>'
+                f'<text class="m ink" x="{px + 62}" y="{y}" font-size="15">{escape(text)}</text></g>{strike}'
+                f'<g class="k{i}">{mark}<text class="mb" x="{px + pw - 24}" y="{y}" font-size="15" text-anchor="end" fill="{col}">{score}</text></g>'
+                f'<line x1="{px + 24}" y1="{y + 20}" x2="{px + pw - 24}" y2="{y + 20}" stroke="var(--rule)" stroke-width="1"/>'
+            )
+        panel.append(f'<rect class="scan" x="{px + 14}" y="{ry0 - 24}" width="{pw - 28}" height="2" fill="var(--red)" opacity="0"/>')
 
-    fy = py + ph - 34
-    css += [lk("vd", 5.6), f".vd{{animation:vd {loop}s linear infinite}}", lk("st", 6.3, "stamp"),
-            f".st{{animation:st {loop}s cubic-bezier(.3,1.4,.5,1) infinite;transform-origin:center;transform-box:fill-box}}",
-            ".stbase{transform:rotate(-9deg);transform-origin:center;transform-box:fill-box}"]
-    panel.append(
-        f'<g class="vd"><text class="mb mute ls" x="{px + 24}" y="{fy}" font-size="13">VERDICT</text>'
-        f'<text class="mb ink ls" x="{px + 110}" y="{fy}" font-size="13">SHIP 3  ·  HOLD 1</text></g>'
-        f'<g class="stbase st"><rect x="{px + pw - 190}" y="{fy - 38}" width="166" height="50" rx="6" fill="var(--panel)" stroke="var(--red)" stroke-width="3"/>'
-        f'<text class="d red" x="{px + pw - 107}" y="{fy - 1}" font-size="33" text-anchor="middle" letter-spacing=".06em">VERIFIED</text></g>'
-    )
+        fy = py + ph - 34
+        css += [lk("vd", 5.6), f".vd{{animation:vd {loop}s linear infinite}}", lk("st", 6.3, "stamp"),
+                f".st{{animation:st {loop}s cubic-bezier(.3,1.4,.5,1) infinite;transform-origin:center;transform-box:fill-box}}",
+                ".stbase{transform:rotate(-9deg);transform-origin:center;transform-box:fill-box}"]
+        panel.append(
+            f'<g class="vd"><text class="mb mute ls" x="{px + 24}" y="{fy}" font-size="13">VERDICT</text>'
+            f'<text class="mb ink ls" x="{px + 110}" y="{fy}" font-size="13">SHIP 3  ·  HOLD 1</text></g>'
+            f'<g class="stbase st"><rect x="{px + pw - 190}" y="{fy - 38}" width="166" height="50" rx="6" fill="var(--panel)" stroke="var(--red)" stroke-width="3"/>'
+            f'<text class="d red" x="{px + pw - 107}" y="{fy - 1}" font-size="33" text-anchor="middle" letter-spacing=".06em">VERIFIED</text></g>'
+        )
 
     # bottom strip: the pipeline, with a runner
     by = 510

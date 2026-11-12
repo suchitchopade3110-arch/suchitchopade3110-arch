@@ -12,7 +12,7 @@
 @keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 @keyframes pop{0%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
 @keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.15}}
-@keyframes tick{from{opacity:1}to{opacity:0}}
+@keyframes tick{0%,100%{opacity:1}}
 @keyframes sweep{0%,72%{transform:translateX(-140%) skewX(-18deg)}100%{transform:translateX(260%) skewX(-18deg)}}
 .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
 .fade{animation:fade .6s ease both}
@@ -20,7 +20,7 @@
 .growy{animation:growy .8s cubic-bezier(.2,.8,.2,1) both;transform-origin:center bottom;transform-box:fill-box}
 .pop{animation:pop .45s cubic-bezier(.2,.8,.2,1) both;transform-origin:center;transform-box:fill-box}
 .blink{animation:blink 1.6s steps(1) infinite}
-.frame{opacity:0;animation:tick .055s step-end forwards}
+.frame{opacity:0;animation:tick .055s linear}  /* no fill: each frame drops back to hidden when its slot ends */
 .shine{transform:translateX(-140%) skewX(-18deg)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 @keyframes swing{0%{opacity:0;transform:translateY(34px) rotate(2.5deg)}60%{opacity:1;transform:translateY(-5px) rotate(-.6deg)}100%{opacity:1;transform:none}}.swing{animation:swing .9s cubic-bezier(.2,.8,.2,1) both;transform-origin:left bottom}@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(4.4);opacity:0}}.ring{animation:ring 2.6s ease-out 1.20s infinite;transform-origin:center;transform-box:fill-box}.shine{animation:sweep 7s ease-in-out 3.5s infinite;transform-box:fill-box}</style><rect x="1" y="1" width="398" height="298" rx="18" fill="#0F0F0D" stroke="#2C2B25" stroke-width="2"/><g class="swing" style="animation-delay:0.00s"><rect class="growy" style="animation-delay:0.30s" x="1" y="40" width="7" height="220" fill="var(--ink)"/><text class="mb mute ls" x="34" y="52" font-size="15">JOB 04</text><circle cx="360" cy="46" r="5" fill="var(--ink)"/><circle class="ring" cx="360" cy="46" r="5" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0"/><text class="mb ink ls" x="344" y="52" font-size="13" text-anchor="end">DEPLOYED</text><clipPath id="n"><text class="d" x="33" y="128" font-size="60">ALETHIA</text></clipPath><text class="d ink" x="33" y="128" font-size="60">ALETHIA</text><g clip-path="url(#n)"><rect class="shine" x="33" y="70" width="70" height="70" fill="var(--ink)" opacity=".9"/></g><text class="m ink fade" style="animation-delay:0.45s" x="34" y="172" font-size="17">Judges loan-agent runs PASS or</text><text class="m ink fade" style="animation-delay:0.55s" x="34" y="197" font-size="17">FAIL without database ground</text><text class="m ink fade" style="animation-delay:0.65s" x="34" y="222" font-size="17">truth.</text><line x1="34" y1="250" x2="366" y2="250" stroke="var(--rule)" stroke-width="1.5"/><text class="m mute fade" style="animation-delay:0.80s" x="34" y="276" font-size="14">scikit-learn · pytest · Docker</text><g class="fade" style="animation-delay:0.90s"><path d="M352 275L365 262M355.9 262H365V271.1" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
