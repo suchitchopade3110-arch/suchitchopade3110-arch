@@ -10,7 +10,7 @@
 <a href="https://github.com/suchitchopade3110-arch/NotAFlop"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/job-notaflop-dark.svg"><img src="./cards/job-notaflop-light.svg" width="32.5%" alt="NOTAFLOP: 11 agents stress-test a startup pitch in under 30 seconds."></picture></a>
 <a href="https://suchitdev.netlify.app"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/job-sourcetrace-dark.svg"><img src="./cards/job-sourcetrace-light.svg" width="32.5%" alt="SOURCETRACE: Turns air-quality sensor spikes into street-level inspection leads."></picture></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/activity-dark.svg"><img src="./cards/activity-light.svg" width="100%" alt="530 contributions in the last 12 months"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/activity-dark.svg"><img src="./cards/activity-light.svg" width="100%" alt="532 contributions in the last 12 months"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/kit-dark.svg"><img src="./cards/kit-light.svg" width="100%" alt="Toolkit: AI / ML, BACKEND, FRONTEND, DATA, INFRA"></picture>
 
