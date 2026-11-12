@@ -1,0 +1,56 @@
+{
+  "login": "suchitchopade3110-arch",
+  "file_no": "3110",
+  "first": "SUCHIT",
+  "last": "CHOPADE",
+  "tagline": ["I plan heists against systems", "that can't prove themselves."],
+  "role": "BACKEND + AI SYSTEMS ENGINEER",
+  "location": "COIMBATORE, INDIA",
+  "status": "OPEN TO INTERNSHIPS",
+  "pipeline": ["RETRIEVE", "REASON", "VERIFY", "SHIP"],
+  "jobs": [
+    {"slug": "aquaverse", "name": "AQUAVERSE AI", "status": "ACTIVE", "accent": "red",
+     "desc": "Predictive risk engine for shrimp and freshwater fish hatcheries.",
+     "stack": "FastAPI · TimescaleDB · Gemma",
+     "url": "https://suchitdev.netlify.app/work/aquaverse"},
+    {"slug": "kannadi", "name": "KANNADI", "status": "PRODUCTION", "accent": "gold",
+     "desc": "Splits AI answers into atomic claims and scores each one before delivery.",
+     "stack": "FastAPI · LangChain · Llama 3.1",
+     "url": "https://suchitdev.netlify.app/work/kannadi"},
+    {"slug": "ignition", "name": "IGNITION", "status": "PRODUCTION", "accent": "ink",
+     "desc": "Multi-agent code review: parallel LLMs plus deterministic AST checks.",
+     "stack": "LangGraph · ts-morph · pgvector",
+     "url": "https://suchitdev.netlify.app/work/ignition"},
+    {"slug": "alethia", "name": "ALETHIA", "status": "DEPLOYED", "accent": "ink",
+     "desc": "Judges loan-agent runs PASS or FAIL without database ground truth.",
+     "stack": "scikit-learn · pytest · Docker",
+     "url": "https://suchitdev.netlify.app/work/alethia"},
+    {"slug": "notaflop", "name": "NOTAFLOP", "status": "BUILDING", "accent": "red",
+     "desc": "11 agents stress-test a startup pitch in under 30 seconds.",
+     "stack": "FastAPI · Groq · SSE",
+     "url": "https://github.com/suchitchopade3110-arch/NotAFlop"},
+    {"slug": "sourcetrace", "name": "SOURCETRACE", "status": "AWARD WINNER", "accent": "gold",
+     "desc": "Turns air-quality sensor spikes into street-level inspection leads.",
+     "stack": "CPCB · OpenAQ",
+     "url": "https://suchitdev.netlify.app"}
+  ],
+  "kit": [
+    ["AI / ML", ["LangGraph", "LangChain", "Llama 3.1", "Mixtral", "Gemma", "RAG pipelines", "claim scoring"]],
+    ["BACKEND", ["Python", "FastAPI", "REST APIs", "async", "retry / backoff", "webhooks", "SSE streaming"]],
+    ["FRONTEND", ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "GSAP"]],
+    ["DATA", ["PostgreSQL", "pgvector", "TimescaleDB", "MongoDB", "Pinecone", "Supabase", "SQLite"]],
+    ["INFRA", ["Docker", "Bun", "ts-morph", "tree-sitter", "GitHub Apps", "Linux", "Git"]]
+  ],
+  "record": [
+    ["AWARD", "BEST USE OF AI", ["GDG Coimbatore, Build with AI", "for SourceTrace"]],
+    ["RANK", "#507", ["HackerRank Orchestrate", "WhatsApp notification router"]],
+    ["ROLE", "LEAD AI ENGINEER", ["Team Straw Hats", "2026 to present"]],
+    ["DEGREE", "B.TECH AI & DS", ["Sri Shakthi Institute, Coimbatore", "class of 2029"]]
+  ],
+  "links": [
+    {"slug": "portfolio", "label": "PORTFOLIO", "url": "https://suchitdev.netlify.app"},
+    {"slug": "linkedin", "label": "LINKEDIN", "url": "https://www.linkedin.com/in/suchit-sachin-chopade-635347338/"},
+    {"slug": "x", "label": "X / TWITTER", "url": "https://x.com/Suchitchopade31"},
+    {"slug": "resume", "label": "RESUME", "url": "https://suchitdev.netlify.app/Suchit_Sachin_Chopade_Resume.pdf"}
+  ]
+}
