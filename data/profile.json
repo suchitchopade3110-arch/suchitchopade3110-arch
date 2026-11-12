@@ -48,7 +48,7 @@
     ["DEGREE", "B.TECH AI & DS", ["Sri Shakthi Institute, Coimbatore", "class of 2029"]]
   ],
   "links": [
-    {"slug": "portfolio", "label": "PORTFOLIO", "url": "https://suchitdev.netlify.app"},
+    {"slug": "portfolio", "label": "PORTFOLIO", "url": "https://suchit3110.netlify.app/"},
     {"slug": "linkedin", "label": "LINKEDIN", "url": "https://www.linkedin.com/in/suchit-sachin-chopade-635347338/"},
     {"slug": "x", "label": "X / TWITTER", "url": "https://x.com/Suchitchopade31"},
     {"slug": "resume", "label": "RESUME", "url": "https://suchitdev.netlify.app/Suchit_Sachin_Chopade_Resume.pdf"}
