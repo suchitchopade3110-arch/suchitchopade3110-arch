@@ -10,7 +10,7 @@
 <a href="https://github.com/suchitchopade3110-arch/NotAFlop"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/job-notaflop-dark.svg?v=9e9394ea"><img src="./cards/job-notaflop-light.svg?v=56db8063" width="32.5%" alt="NOTAFLOP: 11 agents stress-test a startup pitch in under 30 seconds."></picture></a>
 <a href="https://suchitdev.netlify.app"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/job-sourcetrace-dark.svg?v=480666af"><img src="./cards/job-sourcetrace-light.svg?v=d687025d" width="32.5%" alt="SOURCETRACE: Turns air-quality sensor spikes into street-level inspection leads."></picture></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/activity-dark.svg?v=2e55f684"><img src="./cards/activity-light.svg?v=78c8664d" width="100%" alt="533 contributions in the last 12 months"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/activity-dark.svg?v=8c7f04b9"><img src="./cards/activity-light.svg?v=bfebc2cc" width="100%" alt="534 contributions in the last 12 months"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/kit-dark.svg?v=20197a86"><img src="./cards/kit-light.svg?v=ec425c0e" width="100%" alt="Toolkit: AI / ML, BACKEND, FRONTEND, DATA, INFRA"></picture>
 
